@@ -45,7 +45,7 @@ article h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
-article figure>img {
+article >img {
     width: 100%;
 }
 
@@ -58,7 +58,7 @@ article figure>img {
 
 footer {
     text-align: center;
-    padding: 1em 2em 3em 2em;
+    padding: 2em 3em 2em;
 }
 
 footer nav {
