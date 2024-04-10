@@ -24,9 +24,9 @@ main {
     max-width: 1024px;
     margin: auto;
     margin-top: -50px;
-    border-left: 1px dashed gray;
-    border-right: 1px dashed gray;
-    border-bottom: 1px dashed gray;
+    border-left: 1px dashed rgb(234, 233, 240);
+    border-right: 1px dashed rgb(244, 246, 247);
+    border-bottom: 1px dashed rgb(242, 244, 245);
 }
 
 article {
