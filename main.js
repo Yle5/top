@@ -13,8 +13,34 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-var marker = L.marker([43.35, 12.566667]).addTo(map);
-marker.bindPopup("<b>Ciao bello!</b><br>Come and visit me.").openPopup();
+/*
+let marker = L.marker([43.35, 12.566667]).addTo(map);
+marker.bindPopup(`
+
+<b>Ciao bello!</b>
+<ul>
+ <li>Breite:${lat.toFixed(5)}</li>
+ <li>Länge:${lng.toFixed(5)}</li>
+ </ul>
+
+`).openPopup();
+*/
+
+//Massstab hinzugefügt
+L.control.scale({
+    imperial: false
+}).addTo(map);
+
+let jsonPunkt = {
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [lng, lat]
+    },
+    "properties": {
+        "name": "Gubbio"
+    }
+}
 
 let jsonData = {
     "type": "FeatureCollection",
