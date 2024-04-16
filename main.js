@@ -76,7 +76,7 @@ let jsonData = {
                 "coordinates": [12.566667, 43.35]
             },
             "properties": {
-                "user": "Ylenia",
+                "user": "yle5",
                 "name": "Gubbio",
                 "wikipedia": "https://de.wikipedia.org/wiki/Gubbio"
             }
